@@ -5,9 +5,8 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[600px] w-full overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50 z-10"></div>
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600')] bg-cover bg-center"></div>
+      <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40 z-10"></div>
         <div className="container relative z-20 mx-auto flex h-full items-center px-4">
           <div className="max-w-2xl text-white">
             <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl">
