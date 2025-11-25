@@ -116,7 +116,22 @@
   * {
     @apply border-border outline-ring/50;
   }
+  html, body {
+    @apply m-0 p-0;
+  }
   body {
     @apply bg-background text-foreground;
+  }
+  header {
+    background-color: transparent !important;
+  }
+  header.transparent-header {
+    background-color: transparent !important;
+    background: transparent !important;
+  }
+  header.scrolled-header {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
 }

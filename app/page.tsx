@@ -1,31 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col m-0 p-0 -mt-0" style={{ marginTop: 0 }}>
       {/* Hero Section */}
-      <section className="relative h-[600px] w-full overflow-hidden bg-gradient-to-br from-gray-800 via-gray-700 to-gray-900">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/40 z-10"></div>
-        <div className="container relative z-20 mx-auto flex h-full items-center px-4">
-          <div className="max-w-2xl text-white">
-            <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl">
-              Discover Your Dream Property in Saudi Arabia
-            </h1>
-            <p className="mb-8 text-xl text-gray-200">
-              Premium residential and commercial properties in the heart of the Kingdom
-            </p>
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <Button size="lg" className="bg-amber-600 hover:bg-amber-700">
-                Browse Properties
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Learn More
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* Features Section */}
       <section className="py-20">
