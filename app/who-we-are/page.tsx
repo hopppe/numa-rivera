@@ -4,57 +4,80 @@ export default function WhoWeAre() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[400px] w-full overflow-hidden bg-gradient-to-r from-amber-600 to-amber-700">
+      <section 
+        className="relative h-[400px] w-full overflow-hidden"
+        style={{
+          marginTop: '-80px',
+          paddingTop: '80px',
+          background: 'linear-gradient(to right, #03202F, #03202F)',
+        }}
+      >
         <div className="container relative z-20 mx-auto flex h-full items-center px-4">
           <div className="max-w-3xl text-white">
             <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl">
-              A leading regional real estate investment company based in Saudi Arabia
+              American-Saudi Partnership
             </h1>
-            <p className="text-xl text-amber-100">
-              Numa Rivera is a leading real estate investment company that combines an ambitious, entrepreneurial spirit with years of experience and a thorough knowledge of investing in the Saudi Arabian market.
+            <p className="text-xl" style={{color: 'rgba(255, 255, 255, 0.9)'}}>
+              We bridge the best of East and West, uniting American entrepreneurial acumen and creative, data-driven solutions with profound respect for Saudi tradition and enduring local market expertise.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Creating Value Section */}
+      {/* A Purpose-Built Team Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-gray-900">Creating Value Through An Active Partnership Approach</h2>
+            <h2 className="mb-4 text-4xl font-bold text-gray-900">A Purpose-Built Team</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Numa Rivera has a strong management team with real estate and investment expertise and a successful track record of adding value to the properties and projects in which it invests. Since its establishment, Numa Rivera has been actively developing new projects and enhancing the economic development of Saudi Arabia.
+              Our multi-national team brings institutional investment rigor and creative financial engineering, partnered with invaluable cultural fluency and deep, actionable local knowledge. Every investment is guided by global standards and local insight.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Contribution Section */}
+      {/* Management Team Section */}
       <section className="bg-gray-50 py-20">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-gray-900">NUMA RIVERA&apos;S CONTRIBUTION TO THE ECONOMIC DEVELOPMENT OF SAUDI ARABIA</h2>
-            <p className="text-lg text-gray-600 mb-12">
-              Since its establishment, Numa Rivera has been actively developing new projects and enhancing the economic development of Saudi Arabia, with the following results:
+            <h2 className="mb-4 text-4xl font-bold text-gray-900">Management Team</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Numa Rivera has an experienced management team with strong investment expertise and a successful track record of adding value to the companies in which it invests.
             </p>
+            <h3 className="mt-8 text-2xl font-semibold text-gray-700">What Sets us Apart</h3>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <Card className="border-2 text-center">
-              <CardContent className="p-8">
-                <div className="mb-4 text-5xl font-bold text-amber-600">SAR XXXM</div>
-                <p className="text-gray-600">Attracted into Saudi Arabia as Foreign Direct Investment</p>
+            <Card className="border-2 overflow-hidden transition-shadow hover:shadow-lg">
+              <div className="relative h-80 w-full bg-gray-200">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-gray-400">Team Member Photo</span>
+                </div>
+              </div>
+              <CardContent className="p-6 text-center">
+                <h3 className="mb-2 text-2xl font-semibold text-gray-900">JM</h3>
+                <p className="text-sm text-gray-600">Position Title</p>
               </CardContent>
             </Card>
-            <Card className="border-2 text-center">
-              <CardContent className="p-8">
-                <div className="mb-4 text-5xl font-bold text-amber-600">XXX+</div>
-                <p className="text-gray-600">Jobs created in Saudi Arabia</p>
+            <Card className="border-2 overflow-hidden transition-shadow hover:shadow-lg">
+              <div className="relative h-80 w-full bg-gray-200">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-gray-400">Team Member Photo</span>
+                </div>
+              </div>
+              <CardContent className="p-6 text-center">
+                <h3 className="mb-2 text-2xl font-semibold text-gray-900">GA</h3>
+                <p className="text-sm text-gray-600">Position Title</p>
               </CardContent>
             </Card>
-            <Card className="border-2 text-center">
-              <CardContent className="p-8">
-                <div className="mb-4 text-5xl font-bold text-amber-600">XXX+</div>
-                <p className="text-gray-600">Successful Real Estate Projects</p>
+            <Card className="border-2 overflow-hidden transition-shadow hover:shadow-lg">
+              <div className="relative h-80 w-full bg-gray-200">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-gray-400">Team Member Photo</span>
+                </div>
+              </div>
+              <CardContent className="p-6 text-center">
+                <h3 className="mb-2 text-2xl font-semibold text-gray-900">BW</h3>
+                <p className="text-sm text-gray-600">Position Title</p>
               </CardContent>
             </Card>
           </div>
@@ -140,7 +163,7 @@ export default function WhoWeAre() {
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
             <h2 className="mb-4 text-4xl font-bold text-gray-900">BUILDING A BETTER SAUDI ARABIA. ONE STEP AT A TIME.</h2>
-            <h3 className="mb-8 text-2xl font-semibold text-amber-600">CREATING MARKET-LEADING REAL ESTATE PROJECTS</h3>
+            <h3 className="mb-8 text-2xl font-semibold" style={{color: '#03202F'}}>CREATING MARKET-LEADING REAL ESTATE PROJECTS</h3>
           </div>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <div className="space-y-4">

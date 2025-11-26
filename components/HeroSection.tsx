@@ -20,10 +20,10 @@ export default function HeroSection() {
   }, []);
 
   // Calculate overlay opacity based on scroll position
-  // At top (scrollY = 0): opacity = 0 (fully transparent, image shows through)
+  // At top (scrollY = 0): opacity = 0.3 (darker for text legibility)
   // As you scroll: opacity increases gradually
   // At scrollY = 400: opacity = 0.5 (half visible for better text contrast)
-  const overlayOpacity = Math.min(scrollY / 400, 0.5);
+  const overlayOpacity = Math.min(0.3 + (scrollY / 400) * 0.2, 0.5);
 
   return (
     <section 
@@ -61,19 +61,11 @@ export default function HeroSection() {
       <div className="container relative z-20 mx-auto flex h-full items-center px-4">
         <div className="max-w-2xl text-white">
           <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
-            Discover Your Dream Property in Saudi Arabia
+            Experience Kingdom Transformation in line with Vision 2030
           </h1>
           <p className="mb-8 text-xl text-gray-200 drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">
-            Premium residential and commercial properties in the heart of the Kingdom
+            Investment, management, and development services across Saudi Arabia
           </p>
-          <div className="flex flex-col gap-4 sm:flex-row">
-            <Button size="lg" className="bg-amber-600 hover:bg-amber-700">
-              Browse Properties
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              Learn More
-            </Button>
-          </div>
         </div>
       </div>
     </section>

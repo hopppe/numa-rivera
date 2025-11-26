@@ -4,13 +4,20 @@ export default function Investment() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative h-[400px] w-full overflow-hidden bg-gradient-to-r from-amber-600 to-amber-700">
+      <section 
+        className="relative h-[400px] w-full overflow-hidden"
+        style={{
+          marginTop: '-80px',
+          paddingTop: '80px',
+          background: 'linear-gradient(to right, #03202F, #03202F)',
+        }}
+      >
         <div className="container relative z-20 mx-auto flex h-full items-center px-4">
           <div className="max-w-3xl text-white">
             <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl">
               Our Investments
             </h1>
-            <p className="text-xl text-amber-100">
+            <p className="text-xl" style={{color: 'rgba(255, 255, 255, 0.9)'}}>
               Numa Rivera endeavors to be a leading real estate investor with a commitment to sustainable investments that are shaping the future of Saudi Arabia&apos;s real estate sector while driving the Kingdom&apos;s economic transformation.
             </p>
           </div>

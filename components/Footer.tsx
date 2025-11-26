@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,12 +8,47 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center">
-              <div className="h-8 w-8 rounded bg-gradient-to-br from-amber-500 to-amber-700"></div>
-              <span className="ml-3 text-xl font-bold text-gray-900">Numa Rivera</span>
+            <div className="flex items-center space-x-2">
+              <div className="relative h-12 w-auto flex items-center justify-center">
+                <Image
+                  src="/numa-logo.png"
+                  alt="Numa Logo"
+                  width={60}
+                  height={47}
+                  className="object-contain"
+                  style={{
+                    height: "48px",
+                    width: "auto",
+                    imageRendering: "crisp-edges",
+                    WebkitImageRendering: "crisp-edges",
+                  }}
+                />
+              </div>
+              <div className="flex flex-col leading-none" style={{ lineHeight: '1.1' }}>
+                <span
+                  className="text-2xl font-bold text-gray-900"
+                  style={{
+                    fontFamily: 'Helvetica, "Helvetica Neue", Arial, sans-serif',
+                  }}
+                >
+                  Numa Rivera
+                </span>
+                <span
+                  className="text-[8px] font-normal text-gray-900"
+                  style={{
+                    fontFamily: 'Helvetica, "Helvetica Neue", Arial, sans-serif',
+                    marginTop: '2px',
+                    textAlign: 'right',
+                    letterSpacing: '0.5px',
+                  }}
+                >
+                  MENA HOSPITALITY COLLECTIVE
+                </span>
+              </div>
             </div>
             <p className="text-sm text-gray-600">
-              Premium real estate services in Saudi Arabia. Your trusted partner in finding the perfect property.
+            Global Standards, Local Execution: The Future of Saudi Real Estate Investment.
+            
             </p>
           </div>
 
@@ -21,18 +57,18 @@ export default function Footer() {
             <h3 className="mb-4 text-sm font-semibold text-gray-900">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-sm text-gray-600 hover:text-amber-600">
+                <Link href="/" className="text-sm text-gray-600 hover:text-[#03202F]">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-sm text-gray-600 hover:text-amber-600">
-                  About Us
+                <Link href="/who-we-are" className="text-sm text-gray-600 hover:text-[#03202F]">
+                  Who we are
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-sm text-gray-600 hover:text-amber-600">
-                  Contact
+                <Link href="/mhc" className="text-sm text-gray-600 hover:text-[#03202F]">
+                  MHC
                 </Link>
               </li>
             </ul>
@@ -42,10 +78,9 @@ export default function Footer() {
           <div>
             <h3 className="mb-4 text-sm font-semibold text-gray-900">Services</h3>
             <ul className="space-y-2">
-              <li className="text-sm text-gray-600">Residential Sales</li>
-              <li className="text-sm text-gray-600">Commercial Leasing</li>
-              <li className="text-sm text-gray-600">Property Management</li>
-              <li className="text-sm text-gray-600">Investment Consulting</li>
+              <li className="text-sm text-gray-600">Investment</li>
+              <li className="text-sm text-gray-600">Development</li>
+              <li className="text-sm text-gray-600">Management</li>
             </ul>
           </div>
 
@@ -54,7 +89,7 @@ export default function Footer() {
             <h3 className="mb-4 text-sm font-semibold text-gray-900">Contact</h3>
             <ul className="space-y-2">
               <li className="text-sm text-gray-600">Riyadh, Saudi Arabia</li>
-              <li className="text-sm text-gray-600">+966 XX XXX XXXX</li>
+              <li className="text-sm text-gray-600">+966 50 435 7826</li>
               <li className="text-sm text-gray-600">info@numarivera.com</li>
             </ul>
           </div>

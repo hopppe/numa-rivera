@@ -135,3 +135,10 @@
     -webkit-backdrop-filter: blur(8px);
   }
 }
+
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Helvetica'), local('Helvetica Neue');
+  font-weight: normal;
+  font-style: normal;
+}

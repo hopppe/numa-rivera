@@ -67,13 +67,31 @@ export default function Header() {
                 }}
               />
             </div>
-            <span
-              className={`ml-3 text-3xl font-extrabold transition-colors duration-300 ${
-                scrollY > 200 ? "text-gray-900" : "text-white drop-shadow-lg"
-              }`}
-            >
-              Numa Rivera
-            </span>
+            <div className="ml-3 flex flex-col leading-none" style={{ lineHeight: '1.1' }}>
+              <span
+                className={`text-3xl font-bold transition-colors duration-300 ${
+                  scrollY > 200 ? "text-gray-900" : "text-white drop-shadow-lg"
+                }`}
+                style={{
+                  fontFamily: 'Helvetica, "Helvetica Neue", Arial, sans-serif',
+                }}
+              >
+                Numa Rivera
+              </span>
+              <span
+                className={`text-[10px] font-normal transition-colors duration-300 ${
+                  scrollY > 200 ? "text-gray-900" : "text-white drop-shadow-md"
+                }`}
+                style={{
+                  fontFamily: 'Helvetica, "Helvetica Neue", Arial, sans-serif',
+                  marginTop: '2px',
+                  textAlign: 'right',
+                  letterSpacing: '0.5px',
+                }}
+              >
+                MENA HOSPITALITY COLLECTIVE
+              </span>
+            </div>
           </div>
         </Link>
 
@@ -81,47 +99,52 @@ export default function Header() {
         <div className="hidden items-center space-x-8 md:flex">
           <Link
             href="/"
-            className={`text-sm font-medium transition-colors duration-300 hover:text-amber-600 ${
-              scrollY > 200 ? "text-gray-700" : "text-white drop-shadow-md"
+            className={`text-base font-medium transition-colors duration-300 ${
+              scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
             }`}
           >
             Home
           </Link>
           <Link
             href="/who-we-are"
-            className={`text-sm font-medium transition-colors duration-300 hover:text-amber-600 ${
-              scrollY > 200 ? "text-gray-700" : "text-white drop-shadow-md"
+            className={`text-base font-medium transition-colors duration-300 ${
+              scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
             }`}
           >
             Who we are
           </Link>
           <Link
             href="/investment"
-            className={`text-sm font-medium transition-colors duration-300 hover:text-amber-600 ${
-              scrollY > 200 ? "text-gray-700" : "text-white drop-shadow-md"
+            className={`text-base font-medium transition-colors duration-300 ${
+              scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
             }`}
           >
             Investment
           </Link>
           <Link
             href="/about-saudi"
-            className={`text-sm font-medium transition-colors duration-300 hover:text-amber-600 ${
-              scrollY > 200 ? "text-gray-700" : "text-white drop-shadow-md"
+            className={`text-base font-medium transition-colors duration-300 ${
+              scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
             }`}
           >
             About Saudi
           </Link>
           <Link
+            href="/mhc"
+            className={`text-base font-medium transition-colors duration-300 ${
+              scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
+            }`}
+          >
+            MHC
+          </Link>
+          <Link
             href="/contact-us"
-            className={`text-sm font-medium transition-colors duration-300 hover:text-amber-600 ${
-              scrollY > 200 ? "text-gray-700" : "text-white drop-shadow-md"
+            className={`text-base font-medium transition-colors duration-300 ${
+              scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
             }`}
           >
             Contact us
           </Link>
-          <Button className="bg-amber-600 hover:bg-amber-700">
-            Schedule Viewing
-          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -159,44 +182,46 @@ export default function Header() {
           <div className="container mx-auto space-y-1 px-4 py-4">
             <Link
               href="/"
-              className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 hover:bg-amber-50"
+              className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-[rgba(3,32,47,0.1)]"
               onClick={() => setMobileMenuOpen(false)}
             >
               Home
             </Link>
             <Link
               href="/who-we-are"
-              className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 hover:bg-amber-50"
+              className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-[rgba(3,32,47,0.1)]"
               onClick={() => setMobileMenuOpen(false)}
             >
               Who we are
             </Link>
             <Link
               href="/investment"
-              className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 hover:bg-amber-50"
+              className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-[rgba(3,32,47,0.1)]"
               onClick={() => setMobileMenuOpen(false)}
             >
               Investment
             </Link>
             <Link
               href="/about-saudi"
-              className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 hover:bg-amber-50"
+              className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-[rgba(3,32,47,0.1)]"
               onClick={() => setMobileMenuOpen(false)}
             >
               About Saudi
             </Link>
             <Link
+              href="/mhc"
+              className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-[rgba(3,32,47,0.1)]"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              MHC
+            </Link>
+            <Link
               href="/contact-us"
-              className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 hover:bg-amber-50"
+              className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-[rgba(3,32,47,0.1)]"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contact us
             </Link>
-            <div className="pt-2">
-              <Button className="w-full bg-amber-600 hover:bg-amber-700">
-                Schedule Viewing
-              </Button>
-            </div>
           </div>
         </div>
       )}
