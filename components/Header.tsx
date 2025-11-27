@@ -63,8 +63,7 @@ export default function Header() {
                   width: "auto",
                   height: "64px",
                   imageRendering: "crisp-edges",
-                  WebkitImageRendering: "crisp-edges",
-                }}
+                } as React.CSSProperties}
               />
             </div>
             <div className="ml-3 flex flex-col leading-none" style={{ lineHeight: '1.1' }}>

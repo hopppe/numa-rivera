@@ -20,8 +20,7 @@ export default function Footer() {
                     height: "48px",
                     width: "auto",
                     imageRendering: "crisp-edges",
-                    WebkitImageRendering: "crisp-edges",
-                  }}
+                  } as React.CSSProperties}
                 />
               </div>
               <div className="flex flex-col leading-none" style={{ lineHeight: '1.1' }}>
