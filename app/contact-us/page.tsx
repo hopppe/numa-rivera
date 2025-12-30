@@ -81,6 +81,9 @@ export default function Contact() {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [status, setStatus] = useState<{ type: 'success' | 'error' | null, message: string }>({ type: null, message: "" });
+
   const handleCountrySelect = (country: typeof ALL_COUNTRIES[0]) => {
     setFormData((prev) => ({
       ...prev,
@@ -91,10 +94,40 @@ export default function Contact() {
     setIsOpen(false);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic will be added later
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    setStatus({ type: null, message: "" });
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus({ type: 'success', message: "Thank you! Your message has been sent successfully." });
+        setFormData({
+          name: "",
+          email: "",
+          countryCode: "+966",
+          countryIso: "SA",
+          countryFlag: "🇸🇦",
+          phone: "",
+          message: "",
+        });
+      } else {
+        setStatus({ type: 'error', message: "Something went wrong. Please try again later." });
+      }
+    } catch (error) {
+      console.error(error); // Log error for debugging
+      setStatus({ type: 'error', message: "Failed to send message. Please ensure you are connected to the internet." });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -252,9 +285,20 @@ export default function Contact() {
                   />
                 </div>
 
-                <Button type="submit" className="w-full hover:opacity-90 transition-opacity" size="lg" style={{ backgroundColor: '#03202F' }}>
-                  Send Message
+                <Button
+                  type="submit"
+                  className="w-full hover:opacity-90 transition-opacity"
+                  size="lg"
+                  style={{ backgroundColor: '#03202F' }}
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
+                {status.message && (
+                  <div className={`p-4 rounded-md ${status.type === 'success' ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`}>
+                    {status.message}
+                  </div>
+                )}
               </form>
             </div>
 
