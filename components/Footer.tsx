@@ -46,8 +46,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-gray-600">
-            Global Standards, Local Execution: The Future of Saudi Real Estate Investment.
-            
+              Premium real estate services in Saudi Arabia. Your trusted partner in finding the perfect property.
             </p>
           </div>
 
