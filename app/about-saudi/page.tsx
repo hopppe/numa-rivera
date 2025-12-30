@@ -4,7 +4,7 @@ export default function AboutSaudi() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section 
+      <section
         className="relative h-[400px] w-full overflow-hidden"
         style={{
           marginTop: '-80px',
@@ -64,10 +64,7 @@ export default function AboutSaudi() {
                 </CardContent>
               </Card>
             </div>
-            <div className="mt-8 space-y-2 text-gray-600">
-              <p>Arabic is the official language. English is widely spoken.</p>
-              <p>Islam is the official religion. Other religions are respected.</p>
-            </div>
+
           </div>
         </div>
       </section>

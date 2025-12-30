@@ -4,7 +4,7 @@ export default function Investment() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section 
+      <section
         className="relative h-[400px] w-full overflow-hidden"
         style={{
           marginTop: '-80px',
@@ -17,7 +17,7 @@ export default function Investment() {
             <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl">
               Our Investments
             </h1>
-            <p className="text-xl" style={{color: 'rgba(255, 255, 255, 0.9)'}}>
+            <p className="text-xl" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
               Numa Rivera endeavors to be a leading real estate investor with a commitment to sustainable investments that are shaping the future of Saudi Arabia&apos;s real estate sector while driving the Kingdom&apos;s economic transformation.
             </p>
           </div>
@@ -82,36 +82,7 @@ export default function Investment() {
         </div>
       </section>
 
-      {/* Strategic Sectors */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-gray-900">Strategic Real Estate Sectors We Are Investing In</h2>
-            <p className="text-lg text-gray-600">
-              Numa Rivera has worked to incentivize Saudi Arabia&apos;s private sector by investing in new and promising real estate sectors that can create job opportunities, develop capabilities, and allow the local economy to compete regionally and internationally.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              "Residential Development",
-              "Commercial Real Estate",
-              "Mixed-Use Projects",
-              "Hospitality & Tourism",
-              "Industrial Real Estate",
-              "Healthcare Facilities",
-              "Educational Infrastructure",
-              "Retail & Shopping Centers",
-              "Logistics & Warehousing"
-            ].map((sector, index) => (
-              <Card key={index} className="border-2">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-gray-900">{sector}</h3>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Sources of Funding */}
       <section className="bg-gray-50 py-20">

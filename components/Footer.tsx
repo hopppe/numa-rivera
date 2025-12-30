@@ -11,7 +11,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <div className="relative h-12 w-auto flex items-center justify-center">
                 <Image
-                  src="/numa-logo.png"
+                  src="/Numa Rivera Logo Black.png"
                   alt="Numa Logo"
                   width={60}
                   height={47}
@@ -23,11 +23,11 @@ export default function Footer() {
                   } as React.CSSProperties}
                 />
               </div>
-              <div className="flex flex-col leading-none" style={{ lineHeight: '1.1' }}>
+              <div className="flex flex-col leading-none" style={{ lineHeight: '0.9' }}>
                 <span
                   className="text-2xl font-bold text-gray-900"
                   style={{
-                    fontFamily: 'Helvetica, "Helvetica Neue", Arial, sans-serif',
+                    fontFamily: '"Helvetica World", Helvetica, "Helvetica Neue", Arial, sans-serif',
                   }}
                 >
                   Numa Rivera
@@ -35,10 +35,10 @@ export default function Footer() {
                 <span
                   className="text-[8px] font-normal text-gray-900"
                   style={{
-                    fontFamily: 'Helvetica, "Helvetica Neue", Arial, sans-serif',
-                    marginTop: '2px',
+                    fontFamily: '"Helvetica World", Helvetica, "Helvetica Neue", Arial, sans-serif',
+                    marginTop: '-4px',
                     textAlign: 'right',
-                    letterSpacing: '0.5px',
+                    letterSpacing: '0.8px',
                   }}
                 >
                   MENA HOSPITALITY COLLECTIVE
@@ -46,7 +46,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm text-gray-600">
-              Premium real estate services in Saudi Arabia. Your trusted partner in finding the perfect property.
+              Global expertise. Local insight.
             </p>
           </div>
 

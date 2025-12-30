@@ -25,25 +25,24 @@ export default function Header() {
 
   // Header becomes solid when scrolled past 200px (about 33% through 600px hero section)
   const isScrolled = scrollY > 200;
-  
+
   // Calculate opacity for smooth transition (transparent until 200px, then gradually solid)
   const headerOpacity = Math.min((scrollY - 200) / 100, 1); // Smooth transition over 100px after 200px
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        scrollY > 200 ? "scrolled-header" : "transparent-header"
-      }`}
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${scrollY > 200 ? "scrolled-header" : "transparent-header"
+        }`}
       style={{
-        backgroundColor: scrollY > 200 
-          ? `rgba(255, 255, 255, ${0.95 * headerOpacity})` 
+        backgroundColor: scrollY > 200
+          ? `rgba(255, 255, 255, ${0.95 * headerOpacity})`
           : "transparent",
-        borderBottom: scrollY > 200 
-          ? `1px solid rgba(229, 231, 235, ${headerOpacity})` 
+        borderBottom: scrollY > 200
+          ? `1px solid rgba(229, 231, 235, ${headerOpacity})`
           : "1px solid transparent",
       }}
     >
-      <nav 
+      <nav
         className="container mx-auto flex h-20 items-center justify-between px-4"
         style={{
           backgroundColor: "transparent",
@@ -53,39 +52,36 @@ export default function Header() {
           <div className="flex items-center">
             <div className="relative h-16 w-auto flex items-center justify-center">
               <Image
-                src="/numa-logo.png"
+                src={scrollY > 200 ? "/Numa Rivera Logo Black.png" : "/Numa Rivera Logo White.png"}
                 alt="Numa Logo"
                 width={80}
                 height={63}
                 className="transition-all duration-300 object-contain"
                 style={{
-                  filter: scrollY > 200 ? "none" : "brightness(0) invert(1)",
                   width: "auto",
                   height: "64px",
                   imageRendering: "crisp-edges",
                 } as React.CSSProperties}
               />
             </div>
-            <div className="ml-3 flex flex-col leading-none" style={{ lineHeight: '1.1' }}>
+            <div className="ml-3 flex flex-col leading-none" style={{ lineHeight: '0.9' }}>
               <span
-                className={`text-3xl font-bold transition-colors duration-300 ${
-                  scrollY > 200 ? "text-gray-900" : "text-white drop-shadow-lg"
-                }`}
+                className={`text-3xl font-bold transition-colors duration-300 ${scrollY > 200 ? "text-gray-900" : "text-white drop-shadow-lg"
+                  }`}
                 style={{
-                  fontFamily: 'Helvetica, "Helvetica Neue", Arial, sans-serif',
+                  fontFamily: '"Helvetica World", Helvetica, "Helvetica Neue", Arial, sans-serif',
                 }}
               >
                 Numa Rivera
               </span>
               <span
-                className={`text-[10px] font-normal transition-colors duration-300 ${
-                  scrollY > 200 ? "text-gray-900" : "text-white drop-shadow-md"
-                }`}
+                className={`text-[10px] font-normal transition-colors duration-300 ${scrollY > 200 ? "text-gray-900" : "text-white drop-shadow-md"
+                  }`}
                 style={{
-                  fontFamily: 'Helvetica, "Helvetica Neue", Arial, sans-serif',
-                  marginTop: '2px',
+                  fontFamily: '"Helvetica World", Helvetica, "Helvetica Neue", Arial, sans-serif',
+                  marginTop: '-4px',
                   textAlign: 'right',
-                  letterSpacing: '0.5px',
+                  letterSpacing: '0.8px',
                 }}
               >
                 MENA HOSPITALITY COLLECTIVE
@@ -98,49 +94,43 @@ export default function Header() {
         <div className="hidden items-center space-x-8 md:flex">
           <Link
             href="/"
-            className={`text-base font-medium transition-colors duration-300 ${
-              scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
-            }`}
+            className={`text-base font-medium transition-colors duration-300 ${scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
+              }`}
           >
             Home
           </Link>
           <Link
             href="/who-we-are"
-            className={`text-base font-medium transition-colors duration-300 ${
-              scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
-            }`}
+            className={`text-base font-medium transition-colors duration-300 ${scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
+              }`}
           >
             Who we are
           </Link>
           <Link
             href="/investment"
-            className={`text-base font-medium transition-colors duration-300 ${
-              scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
-            }`}
+            className={`text-base font-medium transition-colors duration-300 ${scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
+              }`}
           >
             Investment
           </Link>
           <Link
             href="/about-saudi"
-            className={`text-base font-medium transition-colors duration-300 ${
-              scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
-            }`}
+            className={`text-base font-medium transition-colors duration-300 ${scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
+              }`}
           >
             About Saudi
           </Link>
           <Link
             href="/mhc"
-            className={`text-base font-medium transition-colors duration-300 ${
-              scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
-            }`}
+            className={`text-base font-medium transition-colors duration-300 ${scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
+              }`}
           >
             MHC
           </Link>
           <Link
             href="/contact-us"
-            className={`text-base font-medium transition-colors duration-300 ${
-              scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
-            }`}
+            className={`text-base font-medium transition-colors duration-300 ${scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
+              }`}
           >
             Contact us
           </Link>
@@ -148,9 +138,8 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className={`md:hidden transition-colors duration-300 ${
-            scrollY > 200 ? "text-gray-900" : "text-white"
-          }`}
+          className={`md:hidden transition-colors duration-300 ${scrollY > 200 ? "text-gray-900" : "text-white"
+            }`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           <svg
@@ -174,9 +163,8 @@ export default function Header() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div
-          className={`border-t md:hidden transition-colors duration-300 ${
-            scrollY > 200 ? "bg-white" : "bg-white/95 backdrop-blur"
-          }`}
+          className={`border-t md:hidden transition-colors duration-300 ${scrollY > 200 ? "bg-white" : "bg-white/95 backdrop-blur"
+            }`}
         >
           <div className="container mx-auto space-y-1 px-4 py-4">
             <Link

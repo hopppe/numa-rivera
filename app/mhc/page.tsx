@@ -1,10 +1,11 @@
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function MHC() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section 
+      <section
         className="relative h-[400px] w-full overflow-hidden"
         style={{
           marginTop: '-80px',
@@ -17,7 +18,7 @@ export default function MHC() {
             <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl">
               MENA Hospitality Collective
             </h1>
-            <p className="text-xl" style={{color: 'rgba(255, 255, 255, 0.9)'}}>
+            <p className="text-xl" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
               An American investment holding company with years of experience in real estate investments internationally
             </p>
           </div>
@@ -27,18 +28,30 @@ export default function MHC() {
       {/* Main Content Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="mb-12">
-            <h2 className="mb-6 text-4xl font-bold text-gray-900">About MHC</h2>
-            <div className="space-y-6 text-lg text-gray-600 max-w-4xl">
-              <p>
-                MENA Hospitality Collective (MHC) is an American investment holding company with years of experience in real estate investments internationally. We are a collective of experienced professionals who specialize in opening doors for American investment in international markets, particularly in the Middle East and North Africa region.
-              </p>
-              <p>
-                With a proven track record spanning decades, MHC brings together a team of experts with deep knowledge of international real estate markets, cross-border investment strategies, and the complexities of operating in diverse cultural and regulatory environments.
-              </p>
-              <p>
-                Our collective experience enables us to identify, evaluate, and execute real estate investment opportunities that deliver superior returns while navigating the unique challenges of international markets.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            <div>
+              <h2 className="mb-6 text-4xl font-bold text-gray-900">About MHC</h2>
+              <div className="space-y-6 text-lg text-gray-600">
+                <p>
+                  MENA Hospitality Collective (MHC) is an American investment holding company with years of experience in real estate investments internationally. We are a collective of experienced professionals who specialize in opening doors for American investment in international markets, particularly in the Middle East and North Africa region.
+                </p>
+                <p>
+                  With a proven track record spanning decades, MHC brings together a team of experts with deep knowledge of international real estate markets, cross-border investment strategies, and the complexities of operating in diverse cultural and regulatory environments.
+                </p>
+                <p>
+                  Our collective experience enables us to identify, evaluate, and execute real estate investment opportunities that deliver superior returns while navigating the unique challenges of international markets.
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center w-full">
+              <div className="relative w-full max-w-[500px] aspect-square">
+                <Image
+                  src="/mhc-logo.png"
+                  alt="MHC Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -94,56 +107,13 @@ export default function MHC() {
               <p>
                 This collective approach allows us to leverage diverse experiences, networks, and insights to navigate complex international markets and create value for our investors and partners.
               </p>
-              <p>
-                We understand that successful international real estate investment requires more than just capital—it requires deep market knowledge, strong local relationships, cultural sensitivity, and the ability to bridge American investment practices with international opportunities.
-              </p>
+
             </div>
           </div>
         </div>
       </section>
 
-      {/* Value Proposition Section */}
-      <section className="bg-gray-50 py-20">
-        <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-gray-900">Why MHC</h2>
-          </div>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            <Card className="border-2">
-              <CardContent className="p-6">
-                <h3 className="mb-3 text-xl font-semibold text-gray-900">Proven Track Record</h3>
-                <p className="text-gray-600">
-                  Years of successful real estate investments across international markets demonstrate our ability to identify and execute value-creating opportunities.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-2">
-              <CardContent className="p-6">
-                <h3 className="mb-3 text-xl font-semibold text-gray-900">International Networks</h3>
-                <p className="text-gray-600">
-                  Established relationships and networks that open doors for American investment in key international markets, particularly in the MENA region.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-2">
-              <CardContent className="p-6">
-                <h3 className="mb-3 text-xl font-semibold text-gray-900">Cultural Understanding</h3>
-                <p className="text-gray-600">
-                  Deep understanding of local markets, regulations, and cultural nuances that are essential for successful international real estate investment.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-2">
-              <CardContent className="p-6">
-                <h3 className="mb-3 text-xl font-semibold text-gray-900">Strategic Partnerships</h3>
-                <p className="text-gray-600">
-                  Ability to form strategic partnerships with local developers, investors, and stakeholders to create mutually beneficial investment opportunities.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+
     </div>
   );
 }

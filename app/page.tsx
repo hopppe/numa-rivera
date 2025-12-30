@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import HeroSection from "@/components/HeroSection";
@@ -8,112 +9,83 @@ export default function Home() {
       {/* Hero Section */}
       <HeroSection />
 
-      {/* Features Section */}
-      <section className="py-20">
+      {/* Expertise Section */}
+      <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-gray-900">Why Choose Numa Rivera</h2>
-            <p className="text-lg text-gray-600">
-              Your trusted partner in real estate excellence
+          <div className="mb-16 text-center max-w-3xl mx-auto">
+            <h2 className="mb-6 text-3xl md:text-4xl font-light text-gray-900 tracking-wide">
+              OUR EXPERTISE
+            </h2>
+            <div className="h-1 w-20 bg-[#03202F] mx-auto mb-8"></div>
+            <p className="text-xl text-gray-600 font-light leading-relaxed">
+              We are a full-service real estate firm dedicated to unlocking value through strategic investment, extensive development capabilities, and hands-on management.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <Card className="border-2 transition-shadow hover:shadow-lg">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg" style={{backgroundColor: 'rgba(3, 32, 47, 0.1)'}}>
-                  <svg className="h-6 w-6" style={{color: '#03202F'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                  </svg>
-                </div>
-                <h3 className="mb-2 text-xl font-semibold text-gray-900">Premium Properties</h3>
-                <p className="text-gray-600">
-                  Carefully curated selection of luxury residential and commercial properties across Saudi Arabia.
-                </p>
-              </CardContent>
-            </Card>
 
-            <Card className="border-2 transition-shadow hover:shadow-lg">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg" style={{backgroundColor: 'rgba(3, 32, 47, 0.1)'}}>
-                  <svg className="h-6 w-6" style={{color: '#03202F'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-                <h3 className="mb-2 text-xl font-semibold text-gray-900">Trusted Expertise</h3>
-                <p className="text-gray-600">
-                  Years of experience in the Saudi real estate market with proven track record of success.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-3 md:gap-8">
+            {/* Investment */}
+            <div className="flex flex-col items-center text-center p-6 transition-colors duration-300 hover:bg-gray-50 rounded-lg">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-[#03202F] text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <line x1="12" y1="1" x2="12" y2="23"></line>
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <h3 className="mb-4 text-2xl font-light text-gray-900 tracking-wide">INVESTMENT</h3>
+              <p className="text-gray-600 leading-relaxed font-light">
+                We identify and capitalize on high-potential opportunities across the Kingdom, utilizing rigorous market analysis and risk assessment to deliver superior risk-adjusted returns.
+              </p>
+            </div>
 
-            <Card className="border-2 transition-shadow hover:shadow-lg">
-              <CardContent className="p-6">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg" style={{backgroundColor: 'rgba(3, 32, 47, 0.1)'}}>
-                  <svg className="h-6 w-6" style={{color: '#03202F'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="mb-2 text-xl font-semibold text-gray-900">Fast Process</h3>
-                <p className="text-gray-600">
-                  Streamlined buying and selling process with dedicated support every step of the way.
-                </p>
-              </CardContent>
-            </Card>
+            {/* Development */}
+            <div className="flex flex-col items-center text-center p-6 transition-colors duration-300 hover:bg-gray-50 rounded-lg">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-[#03202F] text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 21h18" />
+                  <path d="M5 21V7l8-4 8 4v14" />
+                  <path d="M17 21v-8.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0-.5.5V21" />
+                  <path d="M9 10a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1z" />
+                </svg>
+              </div>
+              <h3 className="mb-4 text-2xl font-light text-gray-900 tracking-wide">DEVELOPMENT</h3>
+              <p className="text-gray-600 leading-relaxed font-light">
+                From concept to completion, we create sustainable, future-ready environments. Our projects are designed to enhance communities and support Vision 2030.
+              </p>
+            </div>
+
+            {/* Management */}
+            <div className="flex flex-col items-center text-center p-6 transition-colors duration-300 hover:bg-gray-50 rounded-lg">
+              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-[#03202F] text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <h3 className="mb-4 text-2xl font-light text-gray-900 tracking-wide">MANAGEMENT</h3>
+              <p className="text-gray-600 leading-relaxed font-light">
+                We provide comprehensive asset management and consulting services, ensuring operational excellence and maximizing the long-term value of every property in our portfolio.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Featured Properties Section */}
-      <section className="bg-gray-50 py-20">
-        <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-gray-900">Featured Properties</h2>
-            <p className="text-lg text-gray-600">
-              Explore our handpicked selection of premium properties
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            {[1, 2, 3].map((i) => (
-              <Card key={i} className="overflow-hidden transition-transform hover:scale-105">
-                <div className="relative h-64 w-full bg-gray-200">
-                  <div className="absolute inset-0 flex items-center justify-center" style={{background: 'linear-gradient(to bottom right, rgba(3, 32, 47, 0.2), rgba(3, 32, 47, 0.2))'}}>
-                    <span className="text-gray-500">Property Image {i}</span>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <div className="mb-2 flex items-center justify-between">
-                    <span className="rounded-full px-3 py-1 text-sm font-medium" style={{backgroundColor: 'rgba(3, 32, 47, 0.1)', color: '#03202F'}}>
-                      For Sale
-                    </span>
-                    <span className="text-2xl font-bold text-gray-900">SAR X,XXX,XXX</span>
-                  </div>
-                  <h3 className="mb-2 text-xl font-semibold text-gray-900">Luxury Villa</h3>
-                  <p className="mb-4 text-gray-600">Riyadh, Saudi Arabia</p>
-                  <div className="flex gap-4 text-sm text-gray-600">
-                    <span>X Beds</span>
-                    <span>X Baths</span>
-                    <span>XXX sqm</span>
-                  </div>
-                  <Button className="mt-4 w-full hover:opacity-90 transition-opacity" style={{backgroundColor: '#03202F'}}>
-                    View Details
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 text-white" style={{background: 'linear-gradient(to right, #03202F, #03202F)'}}>
+      {/* Vision Statement / CTA */}
+      <section className="py-24 bg-[#03202F] text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="mb-4 text-4xl font-bold">Ready to Find Your Perfect Property?</h2>
-          <p className="mb-8 text-xl" style={{color: 'rgba(255, 255, 255, 0.9)'}}>
-            Let our experts guide you through your real estate journey
+          <h2 className="mb-8 text-3xl md:text-5xl font-light tracking-wide leading-tight">
+            Building the Future of Saudi Hospitality
+          </h2>
+          <p className="mb-12 text-xl text-gray-300 font-light max-w-2xl mx-auto">
+            Partner with a team that combines global expertise with deep local insight.
           </p>
-          <Button size="lg" variant="outline" className="border-white bg-transparent text-white hover:bg-white hover:text-[#03202F] transition-colors">
-            Contact Us Today
-          </Button>
+          <Link href="/contact-us">
+            <Button size="lg" variant="outline" className="border-white bg-transparent text-white hover:bg-white hover:text-[#03202F] transition-colors rounded-none px-8 py-6 text-lg uppercase tracking-widest">
+              Partner With Us
+            </Button>
+          </Link>
         </div>
       </section>
     </div>
