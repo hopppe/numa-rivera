@@ -32,17 +32,7 @@ export default function Footer() {
                 >
                   Numa Rivera
                 </span>
-                <span
-                  className="text-[8px] font-normal text-gray-900"
-                  style={{
-                    fontFamily: '"Helvetica World", Helvetica, "Helvetica Neue", Arial, sans-serif',
-                    marginTop: '-4px',
-                    textAlign: 'right',
-                    letterSpacing: '0.8px',
-                  }}
-                >
-                  MENA HOSPITALITY COLLECTIVE
-                </span>
+
               </div>
             </div>
             <p className="text-sm text-gray-600">
@@ -64,11 +54,7 @@ export default function Footer() {
                   Who we are
                 </Link>
               </li>
-              <li>
-                <Link href="/mhc" className="text-sm text-gray-600 hover:text-[#03202F]">
-                  MHC
-                </Link>
-              </li>
+
             </ul>
           </div>
 

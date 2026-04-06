@@ -74,18 +74,7 @@ export default function Header() {
               >
                 Numa Rivera
               </span>
-              <span
-                className={`text-[10px] font-normal transition-colors duration-300 ${scrollY > 200 ? "text-gray-900" : "text-white drop-shadow-md"
-                  }`}
-                style={{
-                  fontFamily: '"Helvetica World", Helvetica, "Helvetica Neue", Arial, sans-serif',
-                  marginTop: '-4px',
-                  textAlign: 'right',
-                  letterSpacing: '0.8px',
-                }}
-              >
-                MENA HOSPITALITY COLLECTIVE
-              </span>
+
             </div>
           </div>
         </Link>
@@ -120,13 +109,7 @@ export default function Header() {
           >
             About Saudi
           </Link>
-          <Link
-            href="/mhc"
-            className={`text-base font-medium transition-colors duration-300 ${scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
-              }`}
-          >
-            MHC
-          </Link>
+
           <Link
             href="/contact-us"
             className={`text-base font-medium transition-colors duration-300 ${scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
@@ -195,13 +178,7 @@ export default function Header() {
             >
               About Saudi
             </Link>
-            <Link
-              href="/mhc"
-              className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-[rgba(3,32,47,0.1)]"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              MHC
-            </Link>
+
             <Link
               href="/contact-us"
               className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-[rgba(3,32,47,0.1)]"
