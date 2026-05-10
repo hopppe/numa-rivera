@@ -59,9 +59,9 @@ export default function HeroSection() {
         }}
       ></div>
       <div className="container relative z-20 mx-auto flex h-full items-center px-4">
-        <div className="max-w-2xl text-white">
-          <h1 className="mb-6 text-5xl font-bold leading-tight md:text-6xl drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
-            Experience Kingdom Transformation in line with Vision 2030
+        <div className="max-w-4xl text-white">
+          <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)]">
+            An American-Saudi firm with the relationships, structure, and local knowledge to operate where others can&apos;t.
           </h1>
           <p className="mb-8 text-xl text-gray-200 drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)]">
             Investment, management, and development services across Saudi Arabia

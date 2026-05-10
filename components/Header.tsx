@@ -102,13 +102,7 @@ export default function Header() {
           >
             Investment
           </Link>
-          <Link
-            href="/about-saudi"
-            className={`text-base font-medium transition-colors duration-300 ${scrollY > 200 ? "text-gray-700 hover:text-[#03202F]" : "text-white drop-shadow-md hover:text-white/80"
-              }`}
-          >
-            About Saudi
-          </Link>
+
 
           <Link
             href="/contact-us"
@@ -171,13 +165,7 @@ export default function Header() {
             >
               Investment
             </Link>
-            <Link
-              href="/about-saudi"
-              className="block rounded-lg px-3 py-2 text-base font-medium text-gray-700 transition-colors hover:bg-[rgba(3,32,47,0.1)]"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              About Saudi
-            </Link>
+
 
             <Link
               href="/contact-us"

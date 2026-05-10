@@ -19,7 +19,7 @@ export default function WhoWeAre() {
               American-Saudi Partnership
             </h1>
             <p className="text-xl" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-              We bridge the best of East and West, uniting American entrepreneurial acumen and creative, data-driven solutions with profound respect for Saudi tradition and enduring local market expertise.
+              We founded Numa Rivera because the most compelling real estate opportunities in Saudi Arabia require both an insider&apos;s access and an outsider&apos;s perspective. By combining deep Saudi roots with American entrepreneurial discipline, we bring a perspective that is rare in this market and increasingly in demand.
             </p>
           </div>
         </div>
@@ -49,10 +49,15 @@ export default function WhoWeAre() {
       <section className="bg-gray-50 py-20">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-            <Card className="border-2 overflow-hidden transition-shadow hover:shadow-lg">
+            <Card className="group border-2 overflow-hidden transition-all duration-300 hover:shadow-xl">
               <div className="relative h-80 w-full bg-gray-200">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="text-4xl font-bold text-gray-400">GA</span>
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center bg-[#03202F]/95 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <p className="text-sm leading-relaxed text-white">
+                    Ghalib brings deep Saudi market knowledge and an extensive local network built through investments in real estate and hospitality across the Kingdom. His firsthand experience navigating the Saudi market gives Numa Rivera a foundational edge in identifying and executing the right opportunities.
+                  </p>
                 </div>
               </div>
               <CardContent className="p-6 text-center">
@@ -60,10 +65,15 @@ export default function WhoWeAre() {
                 <p className="text-sm text-gray-600">Co-Founder</p>
               </CardContent>
             </Card>
-            <Card className="border-2 overflow-hidden transition-shadow hover:shadow-lg">
+            <Card className="group border-2 overflow-hidden transition-all duration-300 hover:shadow-xl">
               <div className="relative h-80 w-full bg-gray-200">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="text-4xl font-bold text-gray-400">JM</span>
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center bg-[#03202F]/95 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <p className="text-sm leading-relaxed text-white">
+                    Jesse brings American entrepreneurial discipline with a proven track record of building ventures in tourism and real estate across both the United States and Saudi Arabia. His cross-border experience gives Numa Rivera a unique ability to structure opportunities that work for both American and Saudi stakeholders.
+                  </p>
                 </div>
               </div>
               <CardContent className="p-6 text-center">
@@ -71,15 +81,20 @@ export default function WhoWeAre() {
                 <p className="text-sm text-gray-600">Co-Founder</p>
               </CardContent>
             </Card>
-            <Card className="border-2 overflow-hidden transition-shadow hover:shadow-lg">
+            <Card className="group border-2 overflow-hidden transition-all duration-300 hover:shadow-xl">
               <div className="relative h-80 w-full bg-gray-200">
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="text-4xl font-bold text-gray-400">BW</span>
                 </div>
+                <div className="absolute inset-0 flex items-center justify-center bg-[#03202F]/95 p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  <p className="text-sm leading-relaxed text-white">
+                    Buster brings a focused combination of real estate investment expertise, financial analysis, and business development experience to Numa Rivera. He holds a Master&apos;s in Land and Property Development from Texas A&M University and has developed a working knowledge of Arabic, giving him a meaningful ability to engage across both the American and Saudi sides of the firm&apos;s operations.
+                  </p>
+                </div>
               </div>
               <CardContent className="p-6 text-center">
                 <h3 className="mb-2 text-2xl font-semibold text-gray-900">Buster Wologo</h3>
-                <p className="text-sm text-gray-600">Investment Manager</p>
+                <p className="text-sm text-gray-600">VP of Investments</p>
               </CardContent>
             </Card>
           </div>
@@ -88,81 +103,19 @@ export default function WhoWeAre() {
 
 
 
-      {/* Values Details */}
-      <section className="bg-gray-50 py-20">
+
+
+      {/* Our Mission Section */}
+      <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap justify-center gap-8">
-            <Card className="border-2 w-full md:w-[calc(50%-1rem)] lg:w-[calc((100%-4rem)/3)]">
-              <CardContent className="p-6">
-                <h4 className="mb-3 text-xl font-semibold text-gray-900 text-center">Investors First</h4>
-                <p className="text-gray-600">
-                  Numa Rivera is driven by returns for its investors, focusing on partnerships to deliver exceptional results.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-2 w-full md:w-[calc(50%-1rem)] lg:w-[calc((100%-4rem)/3)]">
-              <CardContent className="p-6">
-                <h4 className="mb-3 text-xl font-semibold text-gray-900 text-center">Striving for Excellence</h4>
-                <p className="text-gray-600">
-                  Numa Rivera strives for the highest standards of excellence and will pursue opportunities in line with its strategy, expertise and vision to become a market leader.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-2 w-full md:w-[calc(50%-1rem)] lg:w-[calc((100%-4rem)/3)]">
-              <CardContent className="p-6">
-                <h4 className="mb-3 text-xl font-semibold text-gray-900 text-center">Integrity</h4>
-                <p className="text-gray-600">
-                  Numa Rivera conducts its business with the highest standard of professionalism, ethics, integrity and business conduct.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-2 w-full md:w-[calc(50%-1rem)] lg:w-[calc((100%-4rem)/3)]">
-              <CardContent className="p-6">
-                <h4 className="mb-3 text-xl font-semibold text-gray-900 text-center">Commitment to People</h4>
-                <p className="text-gray-600">
-                  People are our most valuable asset. Numa Rivera will develop people, reward them for commitment and results, and treat them with respect and fairness.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-2 w-full md:w-[calc(50%-1rem)] lg:w-[calc((100%-4rem)/3)]">
-              <CardContent className="p-6">
-                <h4 className="mb-3 text-xl font-semibold text-gray-900 text-center">Commitment to Stakeholders</h4>
-                <p className="text-gray-600">
-                  Numa Rivera strives and commits to add sustainable value to its shareholders, investors, clients and the community.
-                </p>
-              </CardContent>
-            </Card>
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="mb-8 text-4xl font-bold text-gray-900">Our Mission</h2>
+            <p className="text-xl leading-relaxed text-gray-700">
+              Numa Rivera was founded to bridge the gap between American capital and expertise and the extraordinary real estate opportunities emerging across Saudi Arabia and the GCC. We are building a firm defined by integrity, disciplined investment thinking, and genuine commitment to the Kingdom&apos;s long-term growth. We are at the beginning of that journey, and we are building it the right way.
+            </p>
           </div>
         </div>
       </section>
-
-      {/* Building Better Section */}
-      < section className="py-20" >
-        <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
-            <h2 className="mb-4 text-4xl font-bold text-gray-900">BUILDING A BETTER SAUDI ARABIA. ONE STEP AT A TIME.</h2>
-            <h3 className="mb-8 text-2xl font-semibold" style={{ color: '#03202F' }}>CREATING MARKET-LEADING REAL ESTATE PROJECTS</h3>
-          </div>
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div className="space-y-4">
-              <p className="text-gray-600">
-                • Working closely with local and international partners to develop new and innovative real estate projects, which in turn creates new growth opportunities in Saudi Arabia and the adjacent regional and emerging markets
-              </p>
-              <p className="text-gray-600">
-                • Developing and investing in the equity of existing and start-up real estate projects that have robust business models
-              </p>
-            </div>
-            <div className="space-y-4">
-              <p className="text-gray-600">
-                • Building real estate businesses towards sustainable growth to provide expanded investment opportunities for Saudi and regional investors
-              </p>
-              <p className="text-gray-600">
-                • Working with partners to create market-leading real estate companies that deliver excellent returns to shareholders
-              </p>
-            </div>
-          </div>
-        </div>
-      </section >
     </div >
   );
 }

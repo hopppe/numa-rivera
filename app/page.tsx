@@ -33,7 +33,7 @@ export default function Home() {
               </div>
               <h3 className="mb-4 text-2xl font-light text-gray-900 tracking-wide">INVESTMENT</h3>
               <p className="text-gray-600 leading-relaxed font-light">
-                We identify and capitalize on high-potential opportunities across the Kingdom, utilizing rigorous market analysis and risk assessment to deliver superior risk-adjusted returns.
+                We identify high-potential real estate opportunities across Saudi Arabia and the GCC, applying rigorous analysis and a disciplined approach to every decision.
               </p>
             </div>
 
@@ -49,7 +49,7 @@ export default function Home() {
               </div>
               <h3 className="mb-4 text-2xl font-light text-gray-900 tracking-wide">DEVELOPMENT</h3>
               <p className="text-gray-600 leading-relaxed font-light">
-                From concept to completion, we create sustainable, future-ready environments. Our projects are designed to enhance communities and support Vision 2030.
+                We work with trusted partners to develop sustainable, future-ready projects that create lasting value for communities and investors alike.
               </p>
             </div>
 
@@ -65,7 +65,7 @@ export default function Home() {
               </div>
               <h3 className="mb-4 text-2xl font-light text-gray-900 tracking-wide">MANAGEMENT</h3>
               <p className="text-gray-600 leading-relaxed font-light">
-                We provide comprehensive asset management and consulting services, ensuring operational excellence and maximizing the long-term value of every property in our portfolio.
+                We provide hands-on asset management and advisory services, ensuring every property in our portfolio performs to its full potential.
               </p>
             </div>
           </div>
@@ -83,7 +83,7 @@ export default function Home() {
           </p>
           <Link href="/contact-us">
             <Button size="lg" variant="outline" className="border-white bg-transparent text-white hover:bg-white hover:text-[#03202F] transition-colors rounded-none px-8 py-6 text-lg uppercase tracking-widest">
-              Partner With Us
+              GET IN TOUCH
             </Button>
           </Link>
         </div>
